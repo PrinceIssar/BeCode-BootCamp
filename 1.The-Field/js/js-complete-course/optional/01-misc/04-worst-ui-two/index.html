@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BeCode/JavaScript - worst user interface (2) : phone clicker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../_shared/css/normalize.css" />
+    <link rel="stylesheet" href="../../../_shared/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BeCode / JavaScript</h1>
+            <h2>
+                <strong>worst user interface (2) : phone clicker</strong>
+            </h2>
+        </header>
+        <div class="content">
+            <section class="explain">
+                <p>Another exercise in creating the worst possible user interface for dialing a phone number: every
+                    click increases the selected number. Minimum and maximum values are as specified on each button by
+                    the <em>data-min</em> and <em>data-max</em> attributes. Display the number (with a leading 0) in the
+                    target paragraph.</p>
+            </section>
+            <section class="material">
+                <p id="target">+460000000</p>
+                <div class="actions">
+                    <button type="button" id="part-one" data-min="460" data-max="499">460</button>
+                    <button type="button" id="part-two" data-min="00" data-max="99">00</button>
+                    <button type="button" id="part-three" data-min="00" data-max="99">00</button>
+                    <button type="button" id="part-four" data-min="00" data-max="99">00</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
